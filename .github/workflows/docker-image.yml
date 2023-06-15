@@ -17,5 +17,5 @@ jobs:
     - name: Build & Push Image
       run: 
         docker login -u "arnoldroshan" --password Roshan@75
-        docker image build -t arnoldroshan/nodeapp:v1 .
+        docker image build t arnoldroshan/nodeapp:v1 .
         docker push arnoldroshan/nodeapp:v1
