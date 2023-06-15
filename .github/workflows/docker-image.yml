@@ -1,0 +1,21 @@
+name: node application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build & Push Image
+      run: 
+        docker login -u "arnoldroshan" --password Roshan@75
+        docker image build -t arnoldroshan/nodeapp:latest .
+        docker push arnoldroshan/nodeapp:latest
