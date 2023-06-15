@@ -17,7 +17,7 @@ jobs:
     - name: Build & Push Image
       run: 
         echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password Roshan@75
-        docker image build -t arnoldroshan/flaskapp:v1
+        docker image build t arnoldroshan/flaskapp:v1
         docker push arnoldroshan/flaskapp:v1
          
       
