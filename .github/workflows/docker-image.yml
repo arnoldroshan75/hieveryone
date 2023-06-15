@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: 
-       Run docker login -u arnoldroshan -p Roshan@75 arnoldroshan docker image build t arnoldroshan/nodeapp:v1 . docker push arnoldroshan/nodeapp:v1
+        docker login -u arnoldroshan -p Roshan@75 arnoldroshan docker image build t arnoldroshan/nodeapp:v1 . docker push arnoldroshan/nodeapp:v1
        
