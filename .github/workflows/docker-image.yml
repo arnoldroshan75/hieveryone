@@ -1,8 +1,8 @@
-name: Docker Image CI
+name: Python application
 
 on:
   push:
-    branches: [ "mater" ]
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-Roshan@75
+        docker login -u "arnoldroshan" --password-Roshan@75
         docker image build -t arnoldroshan/flaskapp:v1 .
         docker push arnoldroshan/flaskapp:v1
         
