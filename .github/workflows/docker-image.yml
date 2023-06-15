@@ -1,4 +1,4 @@
-name: node app
+name: node appl
 
 on:
   push:
