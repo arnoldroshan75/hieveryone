@@ -1,4 +1,4 @@
-name: Docker Image push to docker hu
+name: Docker Image push to docker hub
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
     - name: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-stdin
         docker image build -t arnoldroshan/node:latest .
