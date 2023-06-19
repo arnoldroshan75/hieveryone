@@ -16,7 +16,7 @@ spec:
         tier: frontend
     spec:
       containers:
-        - name: app
+        - name app
           image: learnitguide/knotejs:1.0
           ports:
             - containerPort: 3000
