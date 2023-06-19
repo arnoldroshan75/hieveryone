@@ -1,4 +1,4 @@
-name: Build and Push Docker image to Docker 
+name: Build and Push Docker image to Docker h
 
 on: push
 jobs:
