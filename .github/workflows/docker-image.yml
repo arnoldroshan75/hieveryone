@@ -17,5 +17,5 @@ jobs:
     - name: Build & Push Image
       run: 
         echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-stdin
-        docker image build -t arnoldroshan/nodeapp:v1 .
-        docker push arnoldroshan/nodeapp:v1
+        docker image build -t arnoldroshan/node:v1 .
+        docker push arnoldroshan/node:v1
