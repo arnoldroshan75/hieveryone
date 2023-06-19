@@ -16,7 +16,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
         with:
           ecr: auto
-          logout: true
+          logout: FALSE
     
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
