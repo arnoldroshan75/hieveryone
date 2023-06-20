@@ -1,5 +1,5 @@
 {
-  "name": "express-image-recognition",
+  "name" "express-image-recognition",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
