@@ -20,7 +20,6 @@ spec:
           ports:
             - containerPort  
           env:
-            - name: MONGO_URL
               value: mongodb://mongo:27017/dev
 
 ---
