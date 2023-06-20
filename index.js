@@ -18,7 +18,7 @@ spec:
       containers:
           image: learnitguide/knotejs
           ports:
-            - containerPort: 3000
+            - containerPort 3000
           env:
             - name: MONGO_URL
               value: mongodb://mongo:27017/dev
