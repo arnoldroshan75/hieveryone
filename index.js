@@ -32,7 +32,7 @@ spec:
     tier: frontend
 
   ports:
-    - port: 80
-      targetPort: 3000
-      nodePort: 30000
+    - port
+      targetPort
+      nodePort
   type: NodePort
