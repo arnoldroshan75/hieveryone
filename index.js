@@ -22,7 +22,6 @@ spec:
           env:
               value: mongodb://mongo:27017/dev
 
----
 apiVersion: v1
 kind: Service
 metadata:
