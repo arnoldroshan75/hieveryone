@@ -11,6 +11,6 @@ jobs:
       run: |
          echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-stdin
          docker build -t arnoldroshan/node .
-         docker push arnoldroshan/node:latest
+         docker push arnoldroshan/node:v1
            
       
