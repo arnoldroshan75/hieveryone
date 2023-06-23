@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "index.html"]
+CMD ["apache2", "index.html"]
