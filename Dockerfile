@@ -1,11 +1,11 @@
-FROM ubuntu/apache2:latest
+FROM techstreets/reactjs:latest
 
 WORKDIR /app
 
 COPY package.json .
-RUN apt install -y apache2 
+RUN npx create-react-app 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["apache2", "index.html"]
+CMD ["react-app", "index.html"]
