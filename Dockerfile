@@ -1,4 +1,4 @@
-FROM techstreets/reactjs:latest
+FROM node:latest
 
 WORKDIR /app
 
@@ -9,4 +9,4 @@ COPY . .
 EXPOSE 3000
 CMD npm run start
 
-CMD ["react-app", "index.html"]
+CMD ["node", "index.html"]
