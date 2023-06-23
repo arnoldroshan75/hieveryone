@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "index.js", "index.html", "index.css"]
+CMD ["node"]
