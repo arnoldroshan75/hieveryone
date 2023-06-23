@@ -3,8 +3,7 @@ FROM techstreets/reactjs:latest
 WORKDIR /app
 
 COPY package.json .
-RUN npx create-react-app 
-RuN  npm start
+RUN npm install
  
 
 EXPOSE 3000
