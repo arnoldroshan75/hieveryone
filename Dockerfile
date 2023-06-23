@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY package.json .
 RUN npx create-react-app 
-COPY . .
+RuN  npm start
+ 
 
 EXPOSE 3000
 
