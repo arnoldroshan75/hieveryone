@@ -1,4 +1,4 @@
-FROM node:14
+FROM ubuntu/apache2:latest
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["node"]
+CMD ["node", "index.html"]
