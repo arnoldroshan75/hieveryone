@@ -1,14 +1,11 @@
-FROM python:2.7-alpine
+FROM node:14
 
-RUN mkdir /app
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-
+COPY package.json .
+RUN npm install 
 COPY . .
 
-LABEL maintainer="WebMagic Informatica <info@webmagicinformatica.com>" \
-      version="1.0"
+EXPOSE 3000
 
-CMD flask run --host=0.0.0.0 --port=5000
+CMD ["node", "index.js"]
