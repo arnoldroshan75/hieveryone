@@ -11,6 +11,6 @@ jobs:
       run: |
          echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-stdin
          docker build -t arnoldroshan/reactapp .
-         docker push arnoldroshan/reactapp:latest
+         docker push arnoldroshan/reactapp:v1
            
       
