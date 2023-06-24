@@ -6,7 +6,7 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+  
     - name: Build and push Docker image
       run: |
          echo "${{ secrets.DOCKERPW }}" | docker login -u "arnoldroshan" --password-stdin
