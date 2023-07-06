@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY package.json .
+
 
 COPY . .
 docker build -t docker-whale .
