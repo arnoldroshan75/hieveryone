@@ -6,8 +6,6 @@ WORKDIR /app
 
 COPY index.html /app
 docker build -t docker-whale .
-RUN apt-get update && \
-    apt-get install -y curl
 RUN npm i
 
 EXPOSE 3000
