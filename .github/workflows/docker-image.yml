@@ -12,5 +12,5 @@ jobs:
         docker build -t app .
         docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_SECRET }}
         docker tag app arnoldroshan/test
-	      docker push arnoldroshan/test
+	docker push arnoldroshan/test
 
